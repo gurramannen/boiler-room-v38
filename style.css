@@ -7,8 +7,9 @@
 
 /* STYLING */
 header, footer{
+    /* background-color: rgb(10, 70, 67); */
     background-color: #0a403a;
-    color: antiquewhite;
+    color: white;
     text-align: center;
     /* padding: 5%; */
 }
@@ -88,7 +89,7 @@ body {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     grid-template-rows: 3rem 6rem auto auto 3rem;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 
 nav {
@@ -183,9 +184,9 @@ footer {
         height: 100%;
     }
 
-    body{
+    /* body{
         gap: 28px;
-    }
+    } */
 }
 
 
@@ -203,12 +204,12 @@ footer {
 
     .sidebar {
         grid-column: 3 / 4;
-        grid-row: 3; 
+        grid-row: 3/5; 
     }
 
     main {
         grid-column: 1 / 3;
-        grid-row: 3;
+        grid-row: 3/5;
     }
 
     .about-box {
