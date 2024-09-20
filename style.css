@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body * {
-
-}
 
 /* STYLING */
 header, footer{
@@ -35,6 +32,10 @@ html, body {
     width: 100vw;
 }
 
+
+
+/* LAYOUT */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
@@ -42,8 +43,6 @@ body {
     grid-template-rows: 300px auto 200px;
     grid-gap: 10px;
 }
-
-
 
 header {
     grid-column: 1 / 2;
@@ -59,3 +58,12 @@ footer {
     grid-column: 1 / 2;
     grid-row: 3 / 4; 
 }
+
+
+
+/* INDEX SPECIFIK STYLING */
+
+/* ABOUT SPECIFIK STYLING  */
+
+/* GALLERI/PRODUKT SPECIFIK STYLING */
+
