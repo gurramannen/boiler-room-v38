@@ -11,8 +11,28 @@ header, footer{
     color: antiquewhite;
 }
 
+footer{
+    height: 75px;
+}
+
+header{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 75px;
+}
+
 .navigation {
     background-color: antiquewhite;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    gap: 80px;
+    font-size: 1.5rem;
+}
+
+nav ul li{
+    display: block;
+
 }
 
 .sidebar h2, .sidebar h3, .navigation h2, .navigation h3{
@@ -74,6 +94,7 @@ footer {
 
 /* INDEX SPECIFIK STYLING */
 
+
 /* ABOUT SPECIFIK STYLING  */
 
 .about-main{
@@ -122,6 +143,29 @@ footer {
 /* GALLERI/PRODUKT SPECIFIK STYLING */
 
 
+/* Iphone */
+
+@media (min-width: 375px), (max-width: 767px){
+    img{
+        width: 40%;
+    }
+
+    footer{
+        padding: 10px;
+        position: inherit;
+
+    }
+
+    .sidebar{
+        height: 100%;
+    }
+
+    body{
+        gap: 28px;
+    }
+}
+
+
 
 /* iPAD mini */
 @media (min-width: 768px){
@@ -141,10 +185,9 @@ footer {
         align-items: flex-start;
         font-size: 14px;
     }
-    
-    footer {
-        grid-column: 1 / 3;
-        grid-row: 5;
+
+    img{
+        width: 50%;
     }
 
     .about-box figure {
@@ -163,10 +206,42 @@ footer {
 
 /* DESKTOP */
 @media (min-width: 1025px){
-    .about-box {
-        flex-basis: 30%; /* On desktop, reduce the size so you can fit more boxes horizontally */
+
+    .blogg {
+        font-size: 1rem;
+        image-resolution: 200px;
+    }
+    
+    nav {
+        font-size: 2rem;
+        display: flex;
+        gap: 50px;
+    }
+    
+    img{
+        width: 30%;
     }
 
+    header  {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
 
+    .sidebar {
+        grid-column: 3 / 3;
+        grid-row: 3; 
+    }
 
+    main {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    nav {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+    footer{
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
 }
