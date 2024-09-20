@@ -11,10 +11,6 @@ header, footer{
     color: antiquewhite;
 }
 
-main{
-    background-color: white;
-}
-
 .navigation {
     background-color: antiquewhite;
 }
@@ -24,8 +20,13 @@ main{
 }
 
 .sidebar {
-    background: #fefefe;
+    background: #edecebec;
 }
+
+main{
+    background-color: white;
+}
+
 
 html, body {
     height: 100vh;
@@ -39,24 +40,34 @@ html, body {
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 4fr 1fr 1fr;
     grid-template-rows: 300px auto 200px;
     grid-gap: 10px;
 }
 
+nav {
+    grid-column: 1/4;
+    grid-row: 1;
+}
 header {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2; 
+    grid-column: 1 / 4;
+    grid-row: 2; 
+}
+
+aside {
+    grid-column: 1 / 4;
+    grid-row: 4; 
+    
 }
 
 main {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    grid-row: 3;
 }
 
 footer {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4; 
+    grid-column: 1 / 4;
+    grid-row: 5; 
 }
 
 
