@@ -15,7 +15,7 @@ header, footer{
     background-color: antiquewhite;
 }
 
-.navigation h2, .navigation h3{
+.sidebar h2, .sidebar h3, .navigation h2, .navigation h3{
     color: rgb(91, 14, 14);
 }
 
