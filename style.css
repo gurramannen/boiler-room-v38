@@ -41,7 +41,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
-    grid-template-rows: 300px auto 200px;
+    grid-template-rows: 3rem 6rem auto 2rem;
     grid-gap: 10px;
 }
 
@@ -54,7 +54,7 @@ header {
     grid-row: 2; 
 }
 
-aside {
+.sidebar {
     grid-column: 1 / 4;
     grid-row: 4; 
     
@@ -78,3 +78,22 @@ footer {
 
 /* GALLERI/PRODUKT SPECIFIK STYLING */
 
+
+
+/* iPAD mini */
+@media (min-width: 768px){
+    .sidebar {
+        grid-column: 3 / 4;
+        grid-row: 3; 
+    }
+
+    main {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px){
+
+}
