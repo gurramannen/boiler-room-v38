@@ -133,7 +133,7 @@ footer {
         grid-row: 3;
     }
 
-    .about-box not #about-team{
+    .about-box {
         flex-basis: 48%; /* Each box takes up about 48% of the width on larger screens */
         flex-direction: row; /* For larger screens: layout side by side */
         align-items: flex-start;
