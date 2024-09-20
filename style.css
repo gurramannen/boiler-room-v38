@@ -117,6 +117,8 @@ footer {
     margin-top: 5px;
 }
 
+
+
 /* GALLERI/PRODUKT SPECIFIK STYLING */
 
 
@@ -137,6 +139,7 @@ footer {
         flex-basis: 48%; /* Each box takes up about 48% of the width on larger screens */
         flex-direction: row; /* For larger screens: layout side by side */
         align-items: flex-start;
+        font-size: 14px;
     }
     
     footer {
@@ -145,12 +148,16 @@ footer {
     }
 
     .about-box figure {
-        width: 40%; /* Set the figure to take 40% of the container */
+        /* width: 40%; /* Set the figure to take 40% of the container */ 
         margin-right: 2%; /* Add some spacing between the image and text */
     }
 
     .about-box p {
         width: 58%; /* Set the paragraph to take the remaining space */
+    }
+
+    .about-box article{
+        flex-basis: 48%;
     }
 }
 
