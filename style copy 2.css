@@ -93,10 +93,8 @@ footer {
 }
 
 .about-box figure {flex: 1}
-.about-box p {flex 1}
+.about-box p {flex: 1}
 
-.about-box:nth-child(1){}
-.about-box:nth-child(2){}
 
 #about-team {
     width: 100%;
