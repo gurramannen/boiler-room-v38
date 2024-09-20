@@ -76,6 +76,10 @@ footer {
 
 /* ABOUT SPECIFIK STYLING  */
 
+.about-main{
+display: flex;
+}
+
 /* GALLERI/PRODUKT SPECIFIK STYLING */
 
 
