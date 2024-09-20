@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body * {
+
+}
 
 /* STYLING */
 header, footer{
     background-color: #0a403a;
+    color: antiquewhite;
 }
 
 main{
@@ -35,8 +39,7 @@ body {
     grid-gap: 10px;
 }
 
-body * {
-}
+
 
 header {
     grid-column: 1 / 2;
