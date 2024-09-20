@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+
+/* STYLING */
+header, footer{
+    background-color: #0d4942;
+}
+
+main{
+    background-color: white;
+}
+
+.navigation {
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    background: #fefefe;
+}
+
 html, body {
     height: 100vh;
     width: 100vw;
