@@ -9,6 +9,7 @@
 header, footer{
     background-color: #0a403a;
     color: antiquewhite;
+    text-align: center;
 }
 
 footer{
@@ -175,13 +176,13 @@ footer {
     }
 
     .about-box {
-        flex-basis: 48%; /* Each box takes up about 48% of the width on larger screens */
+        flex-basis: 48%; 
         flex-direction: row; /* For larger screens: layout side by side */
         align-items: flex-start;
         font-size: 14px;
     }
 
-    img{
+    .about-box figure{
         width: 50%;
     }
 
@@ -195,13 +196,13 @@ footer {
         margin-right: 2%; /* Add some spacing between the image and text */
     }
 
-    .about-box p {
-        width: 58%; /* Set the paragraph to take the remaining space */
-    }
+  /*   .about-box p {
+        width: 58%;
+    } */
 
-    .about-box article{
+/*     .about-box article{
         flex-basis: 48%;
-    }
+    } */
 }
 
 /* DESKTOP */
@@ -218,9 +219,9 @@ footer {
         gap: 50px;
     }
     
-    img{
+   /*  img{
         width: 30%;
-    }
+    } */
 
     header  {
         grid-column: 1 / 4;
