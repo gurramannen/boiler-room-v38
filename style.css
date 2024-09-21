@@ -11,18 +11,18 @@ body {
     background-color: #faf3d6; /* light beige */;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 15rem 4fr 1fr;
-    grid-template-rows: 3rem 6rem auto auto 3rem;
-    /* grid-gap: 10px; */
+    grid-template-columns: 4fr 1fr 15rem;
+    grid-template-rows: 50px 6rem auto auto 80px;
 }
 
 nav {
     grid-column: 1/4;
-    grid-row: 1;
+    grid-row: 1/2;
 }
+
 header {
     grid-column: 1 / 4;
-    grid-row: 2; 
+    grid-row: 2/3; 
 }
 
 .sidebar {
@@ -38,7 +38,10 @@ main {
 
 footer {
     grid-column: 1 / 4;
-    grid-row: 5; 
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* STYLING */
@@ -62,9 +65,29 @@ h2 span{
     color: #254236; /* dark green */
 }
 
-/* footer{
-    height: 75px;
-} */
+ul {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation ul a:hover{
+    color: red;
+}
 
 header{
     font-family: sans-serif;
@@ -86,6 +109,7 @@ header{
     background-color: #a99743;
     background-color: #254236; /* dark green */
     padding: 10px 10%;
+    background-color: antiquewhite;
 /*     min-height: 50px; */
     display: flex;
     gap: 10px;
@@ -141,11 +165,6 @@ html, body {
 #bloggtext{
     text-align: center;
 }
-
-
-
-
-
 
 
 /* INDEX SPECIFIK STYLING */
@@ -284,19 +303,10 @@ html, body {
         width: 40%;
     }
 
-  /*   footer{
-        padding: 10px;
-        position: inherit;
-
-    } */
-
     .sidebar{
         height: 100%;
     }
 
-    /* body{
-        gap: 28px;
-    } */
 }
 
 
@@ -304,14 +314,13 @@ html, body {
 /* iPAD mini */
 @media (min-width: 768px){
 
-
-
     .company-name {
         scale: 70%;
     }
 
     header{
         justify-content: left;
+        padding-left: 40px;
     }
 
     .sidebar {
@@ -341,11 +350,6 @@ html, body {
         width: 120px;
     }
 
-    footer {
-        grid-column: 1 / 4;
-        grid-row: 5;
-    }
-
     .about-box figure {
         /* width: 40%; /* Set the figure to take 40% of the container */ 
         margin-right: 2%; /* Add some spacing between the image and text */
@@ -358,6 +362,14 @@ html, body {
 /*     .about-box article{
         flex-basis: 48%;
     } */
+
+    ul {
+        justify-content: center;
+    }
+
+    ul li {
+        margin: 0 40px;
+    }
 }
 
 /* DESKTOP */
@@ -379,10 +391,9 @@ html, body {
     nav {
         font-size: 2rem;
         display: flex;
-       /*  gap: 50px; */
     }
     
-     img{
+    img{
         width: 30%;
         vertical-align: middle;
     }
@@ -390,6 +401,7 @@ html, body {
     header  {
         grid-column: 1 / 4;
         grid-row: 1;
+        padding-left: 60px;
     }
 
     .sidebar {
@@ -406,8 +418,8 @@ html, body {
         grid-column: 1 / 4;
         grid-row: 2;
     }
-    footer{
-        grid-column: 1 / 4;
-        grid-row: 5;
+
+    ul {
+        justify-content: start;
     }
 }
