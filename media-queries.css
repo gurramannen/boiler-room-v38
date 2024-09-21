@@ -1,0 +1,65 @@
+/* Iphone */
+
+@media (min-width: 375px), (max-width: 767px){
+    img{
+        width: 40%;
+    }
+
+    .sidebar{
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    body {
+      background-color: #faf3d6;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 10rem auto auto 1fr auto;
+    }
+    header{
+        grid-row: 1;
+    }
+    
+    nav {
+      grid-column: 1;
+      grid-row: 2;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #254236; /* dark green */
+      padding: 10px;
+    }
+  
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    ul li {
+      margin-bottom: 10px;
+    }
+  
+    .sidebar {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: #ad9b45; /* mustard yellow */
+      padding: 20px;
+    }
+  
+    main {
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+      margin: 2%;
+    }
+  
+    footer {
+      grid-column: 1 / 4;
+      grid-row: 4;
+      text-align: center;
+      background-color: #6FAE92; /* turquoise */
+      color: white;
+    }
+  }
