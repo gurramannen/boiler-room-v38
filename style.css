@@ -8,9 +8,10 @@
 
 /* LAYOUT */
 body {
+    background-color: #faf3d6; /* light beige */;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 4fr 1fr 15rem;
+    grid-template-columns: 15rem 4fr 1fr;
     grid-template-rows: 3rem 6rem auto auto 3rem;
     /* grid-gap: 10px; */
 }
@@ -42,11 +43,23 @@ footer {
 
 /* STYLING */
 header, footer{
-    /* background-color: rgb(10, 70, 67); */
-    background-color: #0a403a;
+    /* background-color: #264d3a; */ /* slightly lighter green */
+    background-color: #254236; /* dark green */
+    background-color: #faf3d6; /* light beige */
+    background-color: #6FAE92; /* turquoise */
     color: white;
+    color: #1a2521; /* dark green */
+    color: #0f1815; /* darkest green */
     text-align: center;
     /* padding: 5%; */
+}
+
+h2 span{
+    color: #254236;
+}
+
+#company-name {
+    color: #254236; /* dark green */
 }
 
 /* footer{
@@ -70,7 +83,8 @@ header{
 }
 
 .navigation {
-    background-color: antiquewhite;
+    background-color: #a99743;
+    background-color: #254236; /* dark green */
     padding: 10px 10%;
 /*     min-height: 50px; */
     display: flex;
@@ -81,7 +95,7 @@ header{
 }
 
 .navigation ul li a:hover{
-    color: red;
+    color: #ae9d45; /* mustard yellow */
 }
 
 
@@ -90,21 +104,28 @@ nav ul li{
 }
 
 nav ul li a{
-    color: black;
+    color: #fdf6e3; /* light beige */
     text-decoration: none;
 }
 
 .sidebar h2, .sidebar h3, .navigation h2, .navigation h3{
-    color: rgb(91, 14, 14);
+    color: #0f1815; /* darkest green */;
 }
 
 .sidebar {
-    background: #edecebec;
+    background-color: #eadeb8; /* darker beige */
+    background-color: #ad9b45; /* mustard yellow */
     padding: 20px;
 }
 
+.sidebar img {
+    width: 100%;
+    border: solid 5px white;
+    margin-bottom: 2rem;
+}
+
 main{
-    background-color: white;
+    /* background-color:rgb(240,229,194); */
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 3%;
@@ -141,7 +162,12 @@ html, body {
 }
 
 .about-box {
-    background: #f6f5f4;
+    background-color: #254236; /* dark green */
+    background-color: #6FAE92; /* turquoise */
+    background-color: #fefaeb; /* lightest beige */
+    color: white;
+    color: #1a2521; /* dark green */
+    color: #0f1815; /* darkest green */
     padding: 2%;
     flex-basis: 100%;
     /* display: flex;
@@ -153,7 +179,8 @@ html, body {
     max-width: 450px;
 }
 
-.about-box h2, .about-box h3 {color: rgb(150, 0, 0)}
+.about-box h2, .about-box h3 {color: 
+    #254236; /* dark green */}
 
 
 #about-team {
@@ -165,6 +192,7 @@ html, body {
 .about-box img{
     width: 100%;
 }
+
 
 .about-box figure{
     background-color: white;
@@ -287,12 +315,12 @@ html, body {
     }
 
     .sidebar {
-        grid-column: 3 / 4;
+        grid-column: 1 / 1;
         grid-row: 3/5; 
     }
 
     main {
-        grid-column: 1 / 3;
+        grid-column: 2 / 4;
         grid-row: 3 / 5;
     }
 
@@ -365,14 +393,15 @@ html, body {
     }
 
     .sidebar {
-        grid-column: 3 / 3;
+       /*  grid-column: 3 / 3; */
         grid-row: 3; 
     }
 
     main {
-        grid-column: 1 / 3;
+        /* grid-column: 1 / 3; */
         grid-row: 3;
     }
+
     nav {
         grid-column: 1 / 4;
         grid-row: 2;
