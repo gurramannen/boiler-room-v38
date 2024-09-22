@@ -479,8 +479,21 @@ html, body {
       grid-row: 4;
       text-align: center;
       background-color: #6FAE92; /* turquoise */
+      background-color: #254236; /* dark green */
       color: white;
     }
+
+    footer section p a{
+        /* text-decoration: none; */
+        color: white;
+    }
+    footer section p a:hover{
+        /* text-decoration: none; */
+        background-color: #ae9d45;
+        transition: 3ms;
+
+    }
+
 
     
   }
