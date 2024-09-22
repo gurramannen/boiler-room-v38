@@ -42,24 +42,35 @@ footer {
     justify-content: center;
 }
 
+
+
 /* STYLING */
 header, footer{
     /* background-color: #264d3a; */ /* slightly lighter green */
-    background-color: #faf3d6; /* light beige */
+    /* background-color: #faf3d6; */ /* light beige */
     background-color: #6FAE92; /* turquoise */
-    color: white;
-    color: #1a2521; /* dark green */
     color: #0f1815; /* darkest green */
     text-align: center;
     /* padding: 5%; */
 }
 
-h2 span{
-    color: #254236;
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .15rem;
+    word-spacing: .3rem;
 }
 
+h2, h3 {
+    margin-bottom: .2rem;
+}
+
+h2 span {
+    color: #02302b;
+}
+
+
 #company-name {
-    color: #254236; /* dark green */
+    color: #02302b; /* dark green */
 }
 
 ul {
@@ -110,7 +121,6 @@ header figure img {
 }
 
 .navigation {
-    background-color: #a99743;
     background-color: #254236; /* dark green */
    /*  padding: 10px 10%; */
 /*     min-height: 50px; */
@@ -146,15 +156,27 @@ nav ul li a{
 }
 
 .sidebar {
-    background-color: #eadeb8; /* darker beige */
+    /* background-color: #eadeb8; */ /* darker beige */
     background-color: #ad9b45; /* mustard yellow */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar img {
     width: 100%;
+    max-width: 300px;
     border: solid 5px white;
     margin-bottom: 2rem;
+}
+
+.sidebar p{
+max-width: 400px;
+}
+
+.sidebar figure {
+    margin-top: 3rem;
 }
 
 main{
@@ -192,12 +214,13 @@ html, body {
 .about-box {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto 1fr;
+    row-gap: .3rem;
 
-    background-color: #254236; /* dark green */
-    background-color: #6FAE92; /* turquoise */
+   /*  background-color: #254236; */ /* dark green */
+    /* background-color: #6FAE92; */ /* turquoise */
     background-color: #fefaeb; /* lightest beige */
-    color: white;
-    color: #1a2521; /* dark green */
+   /*  color: white; */
+    /* color: #1a2521; */ /* dark green */
     color: #0f1815; /* darkest green */
     padding: 2%;
     flex-basis: 100%;
@@ -214,15 +237,24 @@ html, body {
 
 .about-box h3, .about-box h2 {
     color: #254236; /* dark green */
-    margin-top:.5rem; 
-    margin-bottom: .5rem;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 
 #about-team {
     flex-basis: 100%;
     min-width: 300px;
-    max-width: 900px;
+    max-width: 700px;
+}
+
+#about-team h2 {
+    margin-left: 1rem;
+}
+
+.about-box h3{
+    margin-left: 1rem;
 }
 
 .about-box img{
@@ -236,14 +268,23 @@ html, body {
    /*  margin-right: 1rem; */
     width: 200px;
     height: 230px;
+    margin-left: 1rem;
 }
+
 .person-info {
     grid-column: 2;
     grid-row: 1/2;
+
 }
+
+.about-box article p {
+    margin-left: 1rem;
+}
+
 .contact-info{
     grid-column: 1;
     grid-row: 2;
+    margin-top: .8rem;
 }
 
 #about-team .person-info{
@@ -335,14 +376,44 @@ html, body {
         width: 40%;
     }
 
+    .about-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .about-box figure{
+        padding: 8px;
+       /*  margin-right: 1rem; */
+        width: 200px;
+        height: 230px;
+        margin-left: 1rem;
+        grid-row: 2;
+    }
+    
+    .person-info {
+        grid-column: 1;
+        grid-row: 1;
+    
+    }
+    
+    .about-box article p {
+        margin-left: 1rem;
+    }
+    
+    .contact-info{
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: .8rem;
+    }
+
 }
 
 @media (min-width: 768px) {
     body {
       background-color: #faf3d6;
       display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: 10rem 15rem auto 5rem;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 6rem 15rem auto 5rem;
     }
 
    /*  #product-list-body {
@@ -430,5 +501,7 @@ html, body {
       background-color: #6FAE92; /* turquoise */
       color: white;
     }
+
+    
   }
   
