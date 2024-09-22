@@ -301,21 +301,21 @@ html, body {
 
 
 /* GALLERI/PRODUKT SPECIFIK STYLING */
-#product-list-main {
+#adoption-list-main {
     padding: 20px;
     /* grid-column: 1 / 4; */
 }
 
-#product-list-main h2 {
+#adoption-list-main h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-#product-list-main p {
+#adoption-list-main p {
     margin-bottom: 20px;
 }
 
-#product-container {
+#adoption-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
@@ -326,7 +326,7 @@ html, body {
     background-color: white;
 }
 
-.product-card {
+.adoption-card {
     width: 300px;
     height: 400px;
     border: 1px solid lightgray;
@@ -338,32 +338,32 @@ html, body {
     align-items: center;
 }
 
-.product-card:hover {
+.adoption-card:hover {
     box-shadow: none;
     border: 1px solid black;
 }
 
-.product-image {
+.adoption-image {
     width: 100%;
     height: auto;
     max-height: 60%;
     border-radius: 10px 10px 0 0;
 }
 
-.product-title,
-.product-description {
+.adoption-title,
+.adoption-description {
     max-width: 90%;
 }
 
-.product-title {
+.adoption-title {
     font-size: 1.5rem;
 }
 
-.product-description {
+.adoption-description {
     font-style: italic;
 }
 
-.product-price {
+.adoption-price {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: rgb(96, 96, 96);
@@ -416,7 +416,7 @@ html, body {
       grid-template-rows: 6rem 15rem auto 5rem;
     }
 
-   /*  #product-list-body {
+   /*  #adoption-list-body {
         grid-template-rows: 10rem auto auto 5rem;
     } */
     
@@ -425,7 +425,7 @@ html, body {
         justify-content: start;
     }
 
-    #product-list-body header, #product-list-body header h1 {
+    #adoption-list-body header, #adoption-list-body header h1 {
         justify-content: center;
         margin: 0;
     }
@@ -448,26 +448,6 @@ html, body {
       padding: 40px 20px;
       position: static;
     }
-
-/*     #nav-product{
-        grid-column: 1/4;
-        grid-row: 2;
-    } */
-
- /*    #nav-product ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-        width: 75%;
-    } */
-
-/*     #nav-product ul li{
-        justify-content: left;
-    } */
-
-/*     #product-list-main {
-        grid-row: 3;
-    } */
   
     ul {
       flex-direction: column;
