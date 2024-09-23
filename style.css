@@ -9,8 +9,10 @@ body {
     background-color: #faf3d6; /* light beige */;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 15rem 4fr 1fr ;
+    grid-template-columns: 15rem 4fr 1fr ; 
+    /* grid-template-columns: delar upp sidan i tre kolumner   */
     grid-template-rows: 50px 6rem auto auto 80px;
+    /* definierar höjden på olika rader */
 }
 
 nav {
@@ -40,6 +42,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* Center element med hjälp av flexbox */
 }
 
 
