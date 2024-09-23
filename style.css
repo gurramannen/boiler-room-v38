@@ -375,9 +375,9 @@ html, body {
 /* Iphone */
 
 @media (min-width: 375px), (max-width: 767px){
-    img{
-        width: 40%;
-    }
+    img { width: 40%; }
+
+    header h1 {scale:70%}
 
     .about-box {
         grid-template-columns: 1fr;
@@ -428,13 +428,14 @@ html, body {
         justify-content: start;
     }
 
+    header h1 {
+        scale: 100%;
+        margin-left: 4rem;
+    }
+
     #adoption-list-body header, #adoption-list-body header h1 {
         justify-content: center;
         margin: 0;
-    }
-
-    header h1 {
-        margin-left: 4rem;
     }
 
     header img {

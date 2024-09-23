@@ -8,6 +8,8 @@
     .sidebar{
         height: 100%;
     }
+    
+    .header h1 {scale: 80%}
 
 }
 
