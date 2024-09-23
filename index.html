@@ -10,8 +10,16 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="favicon_io/site.webmanifest">
     </head>
+
+    <style>
+       
+        a:focus {
+            outline: 2px dashed #000; /* Focus outline for better keyboard navigation */
+        }
+    </style>
+
     <body>
-        <nav class="navigation">
+        <nav class="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,7 +27,8 @@
             </ul>
         </nav>
         
-        <header> 
+        <!-- role="banner" på <header> för att definiera huvuddelen av sidan. -->
+        <header role="banner"> 
             <img src="brand-items/pet tales text-only.jpg" alt="Pet Tales logo">
             <h1>
                 grow your family with us
@@ -27,7 +36,9 @@
 
         </header>
 
-        <aside class="sidebar">
+        <!-- role="complementary" på <aside> för att visa att det är kompletterande information.  -->
+
+        <aside class="sidebar" role="complementary">
 
             <img class="" src="brand-items/pet tales logo 1.jpg" alt="Pet Tales Göteborg Logotype">
 
@@ -50,13 +61,13 @@
 
                  <div class="blogg">
 
-                    <img src="bilder/travel1.jpg" alt="travel1">
+                    <img src="bilder/travel1.jpg" alt="Travel photo from Bahamas" role="img">
                     <p id="bloggtext">När vi besökte bahamas</p>
 
-                    <img src="bilder/travel2.jpg" alt="travel2">
+                    <img src="bilder/travel2.jpg" alt="travel2" role="img">
                     <p id="bloggtext">När vi solade på stranden</p>
 
-                    <img src="bilder/travel3.jpg" alt="travel3">
+                    <img src="bilder/travel3.jpg" alt="travel3" role="img">
                     <p id="bloggtext">När vi cyklade i staden</p>
         
                 </div>
